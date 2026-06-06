@@ -55,41 +55,41 @@ python3 clishell.py domain.local/username@dc_ip -hashes aad3b435b51404eeaad3b435
 python3 clishell.py domain.local/username:password@dc_ip -ldaps
 ```
 
-![image-20260606183500186](/Users/chun/coding/CliShell/assets/image-20260606183500186.png)
+![image-20260606183500186](assets/image-20260606183500186.png)
 
 查看域的基本信息，包括机器/域用户数量、MAQ等信息，如图所示
 
-![image-20260606183712618](/Users/chun/coding/CliShell/assets/image-20260606183712618.png)
+![image-20260606183712618](assets/image-20260606183712618.png)
 
 查看域内的委派情况，以及配置rbcd功能
 
-![](/Users/chun/coding/CliShell/assets/image-20260606183826801.png)
+![](assets/image-20260606183826801.png)
 
 > ACL相关功能测试
 
 参考bloodhound中的ACL，基本集成了其中的大多数权限的查询以及分配，`find_interesting_acl`可以查看所有的可以被利用的ACL(我这里过滤了域内的默认ACL)
 
-![image-20260606184946132](/Users/chun/coding/CliShell/assets/image-20260606184946132.png)
+![image-20260606184946132](assets/image-20260606184946132.png)
 
-![image-20260606184058767](/Users/chun/coding/CliShell/assets/image-20260606184058767.png)
+![image-20260606184058767](assets/image-20260606184058767.png)
 
 dcsync也正常
 
-![image-20260606184209142](/Users/chun/coding/CliShell/assets/image-20260606184209142.png)
+![image-20260606184209142](assets/image-20260606184209142.png)
 
 > find_privileged_users
 
 查询特殊组下的成员（backup operators组等等）以及adminCount=1的用户
 
-![image-20260606185619473](/Users/chun/coding/CliShell/assets/image-20260606185619473.png)
+![image-20260606185619473](assets/image-20260606185619473.png)
 
 > find_sessions administrator
 
 基于445+rpc查询会话（拿下域管后定位特定用户）
 
-![image-20260606183626219](/Users/chun/coding/CliShell/assets/image-20260606183626219.png)
+![image-20260606183626219](assets/image-20260606183626219.png)
 
-![image-20260606190120603](/Users/chun/coding/CliShell/assets/image-20260606190120603.png)
+![image-20260606190120603](assets/image-20260606190120603.png)
 
 > add_user|add_computer功能
 
@@ -97,7 +97,7 @@ dcsync也正常
 
 > dump功能，将一些信息保存到本地
 
-![image-20260606190602488](/Users/chun/coding/CliShell/assets/image-20260606190602488.png)
+![image-20260606190602488](assets/image-20260606190602488.png)
 
 ## ⌨️ 5. 命令列表
 
